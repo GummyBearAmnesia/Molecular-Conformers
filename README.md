@@ -1,7 +1,2 @@
 # Molecular-Conformers
 Modelling the changes in the number of molecules over a period of time
-
-A molecular conformer is a particular shape or atomic arrangement that a molecule can adopt. Often molecules will flip between these two arrangements of their atoms. The aim in this problem is to model the changes in the numbers of molecules in different shapes (conformers) over a period of time.
-It is assumed that there are two conformers of a particular molecule which we want to model, conformer A and conformer B, and the total number of molecules is fixed, so that n_A + n_B remains the same. Assuming that every hour, 20% of the current population of conformer A will turn into conformer B. However, there is a chance of also transitioning in the other direction, and so each hour, 10% of the molecules in conformer B turn back into conformer A. We assume that initially, there are 150 'A molecules' and 150 'B molecules'. I also assume that the changes in populations take place in discrete time intervals on the hour, each hour.
-
-I am particularly interested in what happens after a long time - are there a steady number of A- vs. B-molecules, or does one conformer win out? If it is a 'steady state' (when the populations settle down to a constant over time), then what are these steady populations? Note that the transition probabilities remain the same each hour, so we can use the same probability matrix, P, and use it to update the populations many times.
